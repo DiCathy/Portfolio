@@ -30,6 +30,9 @@ nav{
 span{
   color: darkmagenta;
 }
+h1{
+  font-size: 30px;
+}
 nav ul li{
   list-style-type: none;
   display: inline-block;
@@ -40,6 +43,7 @@ nav ul li a{
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
+  font-size: 30px;
 }
 nav ul li a:hover{
   color: darkmagenta;
@@ -58,32 +62,32 @@ nav ul li a:hover{
 .btn:hover{
   transform: scale(1.2);
 }
-.content{
+#home{
   position: absolute;
   top: 50%;
   left: 8%;
-  transform: translateY(-50%);
+ 
+ 
 }
 h2{
   color: white;
   margin-bottom: 50px;
-  font-size: px;
 }
-.content h1{
+#home h1{
   color: white;
   margin: 20px 0px 20px;
   font-size: 80px;
 }
-.content h3{
+#home h3{
   letter-spacing: 2px;
   font-size: 30px;
 }
-.about{
+#about-me{
  width: 100%;
  padding: 100px 0px;
  background-color: #191919;
 }
-.about img{
+#about-me img{
   height: auto;
   width: 400px;
   object-fit: cover;
@@ -113,7 +117,7 @@ h2{
   letter-spacing: 1px;
   margin-bottom: 45px;
 }
-button{background-color: #f9004d;
+button{background-color: darkmagenta;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -122,11 +126,88 @@ button{background-color: #f9004d;
   cursor: pointer;
   border-radius: 30%;
 }
-.skills{
-  margin-top: 10px;
+#skills{
   display: flex;
   align-items: center;
   justify-content: space-around;
- 
-}
+  background-color: black;
+ }
+ .section2{
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: darkmagenta;
+  background-color: black;
+  }
+  .skills3{
+    color: white;
+    font-size: 40px;
+  }
+  .skills3 ul{
+    padding-left: 15px;
+  }
+  .contact-me{
+    background-color: #191919;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: darkmagenta;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: darkgrey;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
 
