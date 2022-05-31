@@ -30,6 +30,23 @@ nav{
 span{
   color: darkmagenta;
 }
+
+  @keyframes zoomInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+  transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+  transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  } 
 h1{
   font-size: 30px;
 }
@@ -131,6 +148,39 @@ button{background-color: darkmagenta;
   background-color: black;
   padding: 40px;
  }
+ #home{
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRightBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(2000px, 0, 0);
+  transform: translate3d(2000px, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRightBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(2000px, 0, 0);
+  transform: translate3d(2000px, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+ 
  .section2{
   padding-top: 15px;
   text-align: center;
@@ -149,6 +199,7 @@ button{background-color: darkmagenta;
     text-align: center;
     color: darkmagenta;
     background-color: #191919;
+    padding-top: 20px;
   }
   form {
       max-width:420px;
@@ -207,7 +258,7 @@ footer{
   position: absolute;
   width: 300px;
   height: 300px;
-  margin-top: -380px;
+  margin-top: -320px;
   margin-left: 200px;
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
@@ -242,8 +293,8 @@ footer{
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   background: #222;
   transform: rotateX(90deg) translateZ(150px);
 }
@@ -270,4 +321,5 @@ ion-icon{
  .ende{
    text-align: center;
  }
+
  
