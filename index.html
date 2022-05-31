@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Maven+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -25,10 +25,10 @@
     <nav>
       <h2 class="logo">Portfo<span>lio</span></h2>
       <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#Contact me">Contact me</a></li>
+        <li><a href="#Home">Home</li>
+        <li><a href="#about-me">About</li>
+        <li><a href="#skills">Skills</li>
+        <li><a href="#Contact me">Contact</li>
       </ul>
    
 
@@ -45,10 +45,10 @@
       <img src="/pictures/IMG_20220320_144022955.jpg" alt="kathy">
       <div class="about-text">
         <h5>About me</h5>
-        <h2>Web Developer <span>Student</span>Since march of this year, I have been attending the DCI'S one-year Web Developer course.
-          Since then we have been learning GitHub Html & CSS.<br>
-          This gives me the opportunity to create my own portfolio at the end of the first block.<br>
-          In the next few weeks we will be learning JavaScript to refine the next block of work and expand my portfolio.
+        <p>Web Developer <span>Student</span>   Since march of this year, I have been attending the DCI'S one-year Web  Developer course.
+        Since then we have been learning GitHub Html & CSS.<br>
+        This gives me the opportunity to create my own portfolio at the end of the first block.<br>
+        In the next few weeks we will be learning JavaScript to refine the next block of work and expand my portfolio.
         </p><br>
         <button type="button">Let`s Talk</button>
       </div>
@@ -90,36 +90,34 @@
 
   <section id="contact-me">
     <h1 class="contact-me1">Contact me</h1>
-  <div class="formular">
- <form
-  action="https://formspree.io/f/xgedpoly"
-  method="POST"
->
-  <fieldset>
-   <legend>Personal Data:</legend>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="Email">Email:</label>
-    <input type="text" id="Email" name="email"><br><br>
-    <label for="Text">Your Text:</label>
-    <input type="text" id="Text" name="Text"
-    placeholder="Tell me more..."><br><br>
-  </fieldset>
-
-  <input type="submit" value="Order our Services">
+ <form action="https://formspree.io/f/{form_id}" method="post">    
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <button type="submit">Submit</button>
+</form>
+<div class="cube">
+  <div class="top"></div>
+  <div>
+   <span style="--i:0;"></span>
+   <span style="--i:1;"></span>
+   <span style="--i:2;"></span>
+   <span style="--i:3;"></span>
+  </div>
 </div>
 </section>
 
+<footer>
+  <a href="https://github.com/DiCathy">
+    <ion-icon name="logo-gitlab"></ion-icon>
+    <p class="ende">Create by Kathy Mayer 2022</p>
+  <a href="https://www.linkedin.com/in/katharina-mayer-515836234/">
+    <ion-icon name="logo-linkedin"></ion-icon>
+</footer>
 
 
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
